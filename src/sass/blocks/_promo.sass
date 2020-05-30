@@ -1,0 +1,35 @@
+.promo
+    padding: 40px 0 68px 0
+    height: 700px
+    background: url('../assets/images/bg_promo.png') center (center / cover) no-repeat
+    color: white   
+    .container
+        position: relative 
+        height: 660px
+    .header
+        display: grid
+        grid-template-columns: 140px 1fr
+        align-items: center
+        &__nav 
+            justify-self: right  
+            +h6-bold-14
+            ul
+                padding: 0
+                list-style-type: none 
+                display: flex                              
+                li 
+                    margin-right: 43px
+                    &:last-child
+                        margin-right: 0
+    &__header
+        margin-top: 133px
+        max-width: 527px
+        +h2-black-42
+    &__subheader
+        margin-top: 27px
+        max-width: 433px
+        +h4-regular-24
+    &__phone
+        position: absolute
+        bottom: -3px
+        right: 0

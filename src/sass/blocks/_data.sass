@@ -1,0 +1,66 @@
+.data
+    min-height: 580px
+    color: white
+    position: relative
+    .title 
+        position: absolute
+        top: 79px
+        z-index: 2
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 374px
+    &__wrapper 
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-auto-rows: 580px
+    &__left
+        background: url('../assets/images/cloud_1.png'), linear-gradient(45deg, #e23ec738, #28b7e256)
+        text-align: right
+        &-inf
+            padding: 38px 27px 38px 0
+            margin-right: 43px
+            right: 0
+            position: relative          
+    &__right
+        background: url('../assets/images/server_1.png'), linear-gradient(45deg, #e23ec738, #28b7e256) 
+        text-align: left
+        &-inf
+            padding: 38px 0 38px 27px
+            margin-left: 43px
+            position: relative
+    &__right, &__left
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        background-color: rgba(1, 1, 1, 0.4)  
+        background-blend-mode: multiply 
+        position: relative
+        &-inf 
+            position: absolute
+            bottom: 20%
+            z-index: 2
+        h3 
+            +h3-black-30
+            text-transform: uppercase
+            letter-spacing: 1px
+        h5 
+            +h5-light-18
+            margin-top: 20px
+            display: inline-block
+            max-width: 483px
+    &__blue-square
+        width: 167px
+        height: 167px
+        opacity: 0.3
+        background-color: $blue
+        z-index: -1
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        &_r
+            left: 0
+        &_l
+            right: 0
+            
+    
+            
